@@ -1,0 +1,106 @@
+﻿			Curso GIT 
+
+#Diferentemente dos demais sistemas, o GIT trabalha com o estados dos arquivos ao invés de diferenças dos arquivos.
+#Versiona o arquivos do projeto automaticamente.
+
+
+============	Configurações básicas.	===========
+# Após a instalação do GIT fa-se necessário configurá-lo. Nome de usuário (Bruno Nunes) ,email (bmartins@indracompany.com)  e grupo.
+
+Example:
+
+git config --global user.name "Bruno Nunes"
+git config --global user.email "bmartins@indracompany.com"
+
+
+=======	Ciclo de vida Status Arquivos ==========
+
+# Separa em qatro estados o ciclo de vida dos arquivos:
+
+UNTRACKED : Arquivo que não foi reconhecido pelo GIT, esta presente no repositório.
+UNMODIFIED: O GIT já reconheceu o arquivo no repositório porém, ainda, não há modificações.
+MODIFIED : Se houver modificações ele passa a ser considerado como modificado.
+STAGED : É a aréa onde o arquivo modificado esta em "produção" e no momento em que a versão for fechada (comit) ele passa a ser unmodified, até que seja criado uma nova versão.
+
+
+========== Committed ==================
+
+# Comitar é o mesmo que informar para o GIT que aqueles arquivos alterados no repositório podem formar uma versão. Cria o Snapshot.
+# No momento do commit é importante informar nos comentários o que foi feito, como por exemplo, se foi uma alteração específica ou, se foi uma correção de um bug. O intuito é mapear onde foi alterado e motivo.
+
+exemplo :
+
+git commit -m "(comentário) "
+# o -m significa que você escreverá uma mensagem ao comitar o arquivo.
+
+
+========== Branch ==================
+
+Vantagens 
+
+- Pode modificar um projeto sem alterar o local principal (master), ou seja, pode ocorrer em paralelo uma alteração de um bug enquando uma determinada equipe trabalha no mesmo arquivo.
+
+- Evita conflitos.
+
+
+===================  Unindo Branch Merge   ==================
+Pro :
+- Merge é uma operação não destruiva.
+- Vai criar um novo comit juntando as demais.
+- Não vai alterar o histórico.
+
+Contra : 
+
+- Commit extra.
+- Histórico poluído.
+
+
+============== Unindo Branch Rebase ===========================
+
+Pro :
+
+- Evita commit extra.
+
+- Histórico linear.
+
+Contra :
+
+- Perde a ordem cronológica.
+
+=============================================================
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
