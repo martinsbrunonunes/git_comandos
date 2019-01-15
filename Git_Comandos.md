@@ -131,4 +131,8 @@
 
 ``git branch -a``
 
+#Configurando para não solicitar senha ao realizar commites. Obs :  Após executar comando, realize um pull.
+
+``git config credential.helper store``
+
 
