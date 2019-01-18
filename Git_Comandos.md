@@ -4,7 +4,6 @@
 
 ``git config --list``
 
-
 #Comando responsável por inicializar o repositório e ficar enxergando todas as mudanças que houver dentro do projeto.
 
 ``git init``
